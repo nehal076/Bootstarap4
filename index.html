@@ -115,38 +115,61 @@
             </div>
         </div>
 
-        <div class="row row-content align-items-center justify-content-center" id="reserveTable">
-            <div class="col-12 col-sm-6">
-                <div class="card">
-                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
-                    <div class="card-body">
-                        <dl class="row">
-                            <dt class="col-lg-4 col-sm col-xs-12">No. of Guests</dt>
-                            <dd class="col-lg-8 col-sm col-xs-12">
-                                <input type="radio" name="guestCount"> 1
-                                <input type="radio" name="guestCount"> 2
-                                <input type="radio" name="guestCount"> 3
-                                <input type="radio" name="guestCount"> 4
-                                <input type="radio" name="guestCount"> 5
-                                <input type="radio" name="guestCount"> 6 
-                            </dd>
-                            <dt class="col-lg-4 col-sm">Date and Time</dt>
-                            <dd class="col-lg-8 col-sm">
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-4">
-                                        <input type="text" class="form-control" placeholder="Date">
-                                    </div>
-                                    <div class="col-xs-12 col-sm-4">
-                                        <input type="text" class="form-control" placeholder="Time">
+        
+        <div class="row row-content align-items-center">
+            <div class="col-12 offset-sm-2 col-sm-8">
+                <a name="reserveTable">
+                    <div class="card">
+                        <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="number" class="col-sm-2 col-form-label">Number of Guests</label>
+                                    <div class="col-sm-6">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="guestCount">
+                                            <label class="form-check-label">1</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="guestCount">
+                                            <label class="form-check-label">2</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="guestCount">
+                                            <label class="form-check-label">3</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="guestCount">
+                                            <label class="form-check-label">4</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="guestCount">
+                                            <label class="form-check-label">5</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="guestCount">
+                                            <label class="form-check-label">6</label>
+                                        </div>
                                     </div>
                                 </div>
-                            </dd>
-                            <dt class="col-lg-3 col-sm">
-                                <button class="btn btn-primary btn-block">Reserve</button>
-                            </dt>
-                        </dl>
+                                <div class="form-group row">
+                                    <label for="Date" class = "col-12 col-sm-2 col-form-label">Date and Time</label>
+                                    <div class="col-5 col-sm-3">
+                                        <input type="text" class="form-control" placeholder="Date">
+                                    </div>
+                                    <div class="col-5 col-sm-3">
+                                        <input type="text" class = "form-control" placeholder="Time">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="offset-md-2 col-md-10">
+                                        <button type="submit" class="btn btn-primary">Reserve</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
